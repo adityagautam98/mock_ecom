@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mockecom/drawer.dart';
 
 class Users extends StatefulWidget {
   @override
@@ -8,8 +9,13 @@ class Users extends StatefulWidget {
 class _UsersState extends State<Users> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(appBar: AppBar(
+      title: Text(
+          "Register Users"
+      ),
+    ),
 
+        drawer: MyDrawer(),
         body: ListView(
           children: <Widget>[
             Padding(

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter/services.dart';
 import 'package:mockecom/Orders.dart';
+import 'package:mockecom/drawer.dart';
 
 import 'Payment.dart';
 import 'UI.dart';
@@ -18,8 +19,7 @@ void main() {
             theme: ThemeData(
               // Define the default brightness and colors.
               brightness: Brightness.light,
-              primaryColor:Colors.deepPurple,
-              accentColor: Colors.deepPurple.shade300,),
+             ),
             debugShowCheckedModeBanner: false,
             home: Ui())
 

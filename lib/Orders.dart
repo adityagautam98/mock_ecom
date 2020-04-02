@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'drawer.dart';
+
 class Orders extends StatefulWidget {
   @override
   _OrdersState createState() => _OrdersState();
@@ -9,7 +11,8 @@ class _OrdersState extends State<Orders> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
+      debugShowCheckedModeBanner: false,
+        home: Scaffold(drawer: MyDrawer(),
           appBar: AppBar(
             title: Text('Orders'),
           ),
@@ -19,7 +22,7 @@ class _OrdersState extends State<Orders> {
             builder: (context, constraints) => SingleChildScrollView(
               child: Column(
                 children: [
-                  const Text('Orders', style: TextStyle(fontSize:25, color: Colors.black87,fontWeight: FontWeight.bold),),
+
                   SizedBox(height: 10,),
                   Container(
                     alignment: Alignment.topLeft,
@@ -96,7 +99,9 @@ class _OrdersState extends State<Orders> {
               ),
             ),
           ),
-        ));
+
+        )
+    );
 
   }
 }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'drawer.dart';
+
 class Ui extends StatefulWidget {
   @override
   _UiState createState() => _UiState();
@@ -9,7 +11,12 @@ class _UiState extends State<Ui> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+        drawer: MyDrawer(),
+        appBar: AppBar(
+          title: Text(
+            "Ui"
+          ),
+        ),
         body: ListView(
           children: <Widget>[
             Padding(
