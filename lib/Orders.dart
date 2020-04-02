@@ -42,48 +42,48 @@ class _OrdersState extends State<Orders> {
                             DataRow(cells: [
                               DataCell(Text('0422020748')),
                               DataCell(Text('Cash On Delivery')),
-                              DataCell(Text("390")),
+                              DataCell(Text("\$390")),
                             ]),
                             DataRow(cells: [
                               DataCell(Text('0422020747')),
                               DataCell(Text('Cash On Delivery	')),
-                              DataCell(Text('156')),
+                              DataCell(Text('\$156')),
                             ]),DataRow(cells: [
                               DataCell(Text('0422020743	')),
                               DataCell(Text('Cash On Delivery	')),
-                              DataCell(Text("2602.6")),
+                              DataCell(Text("\$2602.6")),
                             ]),
                             DataRow(cells: [
                               DataCell(Text('0422020742	')),
                               DataCell(Text('Cash On Delivery')),
-                              DataCell(Text("389")),
+                              DataCell(Text("\$389")),
                             ]), DataRow(cells: [
                               DataCell(Text('0422020748')),
                               DataCell(Text('Cash On Delivery')),
-                              DataCell(Text("390")),
+                              DataCell(Text("\$390")),
                             ]),
 
                             DataRow(cells: [
                               DataCell(Text('0422020737')),
                               DataCell(Text('Cash On Delivery	')),
-                              DataCell(Text('348')),
+                              DataCell(Text('\$348')),
                             ]),
                             DataRow(cells: [
                               DataCell(Text('0422020737')),
                               DataCell(Text('Cash On Delivery	')),
-                              DataCell(Text('602.8')),
-                            ]),
-
-                            DataRow(cells: [
-                              DataCell(Text('0422020737')),
-                              DataCell(Text('Cash On Delivery	')),
-                              DataCell(Text('2402.8')),
+                              DataCell(Text('\$602.8')),
                             ]),
 
                             DataRow(cells: [
                               DataCell(Text('0422020737')),
                               DataCell(Text('Cash On Delivery	')),
-                              DataCell(Text('2602.8')),
+                              DataCell(Text('\$2402.8')),
+                            ]),
+
+                            DataRow(cells: [
+                              DataCell(Text('0422020737')),
+                              DataCell(Text('Cash On Delivery	')),
+                              DataCell(Text('\$2602.8')),
                             ]),
 
                           ],
