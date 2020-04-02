@@ -3,6 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'drawer.dart';
+
 class Payment extends StatefulWidget {
   @override
   _PaymentState createState() => _PaymentState();
@@ -25,8 +27,13 @@ class _PaymentState extends State<Payment> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(drawer: MyDrawer(),
         key: _scaffoldKey,
+        appBar: AppBar(
+          title: Text(
+              "Payment"
+          ),
+        ),
 
         body: Builder(
           builder: (context) =>
