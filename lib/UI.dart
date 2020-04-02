@@ -19,7 +19,7 @@ class _UiState extends State<Ui> {
 
                 Card(
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15.0),
+                    borderRadius: BorderRadius.circular(30.0),
                   ),
                   elevation: 10,
                   child: Container(
@@ -27,28 +27,25 @@ class _UiState extends State<Ui> {
                       child: Column(
                         children: <Widget>[
                           Container(
-                              margin: EdgeInsets.fromLTRB(50,10,10,10),
-                              color: Colors.white,
+
+
                               child: Column(children: <Widget>[
                                 SizedBox(
                                   height: 20,
                                 ),
                                 Container(
+
                                     width: double.infinity,
                                     child: Text(
-                                      "Signed in with",
+                                    "   Home Screen",
                                       style: TextStyle(
                                         fontFamily: "Playfair",
-                                        color: Colors.grey,
+                                        color: Colors.black87,
                                         fontSize: 20,
                                         fontStyle: FontStyle.normal,
                                       ),
 
                                     )),
-
-                                SizedBox(
-                                  height: 20,
-                                ),
 
                                 SizedBox(
                                   height: 10,
@@ -64,21 +61,7 @@ class _UiState extends State<Ui> {
                                 endIndent: 8,
                                 color: Colors.grey.shade400,
                               ),
-                              SizedBox(
-                                height: 10,
-                              ),
 
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Text(
-                                  "Delete", style: TextStyle(
-                                  fontFamily: "OpenSans",
-                                  fontSize: 20,
-
-                                  color: Colors.black87,
-                                ),
-                                ),
-                              ),
                               SizedBox(
                                 height: 20,
                               ),
@@ -87,12 +70,20 @@ class _UiState extends State<Ui> {
                           )
                         ],
                       )),
-                )
-
-                ,SizedBox(
-                  height: 10,
                 ),
+Container(
 
+  color: Colors.black87,
+  child: Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: <Widget>[
+      Icon(Icons.edit, color: Colors.white,),
+      Text("Edit",
+        style: TextStyle(color: Colors.white,))
+    ],
+  ),
+  height: 50,
+)
 
               ],
               ),
