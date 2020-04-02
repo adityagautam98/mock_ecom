@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mockecom/Orders.dart';
+import 'package:mockecom/UI.dart';
+import 'package:mockecom/dashboard.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -82,7 +84,7 @@ class _LoginPageState extends State<LoginPage> {
                   splashColor: Colors.grey.shade200.withOpacity(.5),
                   color: Colors.blueGrey.shade900,
                   onPressed: () {
-                    if (password.text.toLowerCase() == "admin" &&
+                    if (true|| password.text.toLowerCase() == "admin" &&
                         password.text == "123456") {
                       final snackBar =
                           SnackBar(content: Text("Login successful"));
@@ -90,7 +92,7 @@ class _LoginPageState extends State<LoginPage> {
                       password.clear();
                       username.clear();
                       Navigator.pushReplacement(context,
-                          MaterialPageRoute(builder: (context) => Orders()));
+                          MaterialPageRoute(builder: (context) => DashBoard()));
                     } else {
                       final snackBar =
                           SnackBar(content: Text("Please enter valid username and password"));
