@@ -40,46 +40,53 @@ class _DashBoardState extends State<DashBoard> {
                 itemCount: number.length,
                 shrinkWrap: true,
                 itemBuilder: (_, int index) {
-                  return Card(
-                    child: Column(
-                      children: <Widget>[
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(30, 35, 0, 20),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  Text(
-                                    number[index],
-                                    style: TextStyle(
-                                        fontSize: 30,
-                                        fontWeight: FontWeight.w500),
-                                  ),
-                                  SizedBox(
-                                    height: 20,
-                                  ),
-                                  Text(category[index],
-                                      style: TextStyle(fontSize: 18))
-                                ],
+                  return Padding(
+                    padding: const EdgeInsets.only(left: 5, top: 5, right: 5),
+                    child: Card(
+                      elevation: 4,
+                      child: Column(
+                        children: <Widget>[
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(30, 35, 0, 10),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      number[index],
+                                      style: TextStyle(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.w500),
+                                    ),
+                                    SizedBox(
+                                      height: 20,
+                                    ),
+                                    Text(category[index],
+                                        style: TextStyle(fontSize: 18))
+                                  ],
+                                ),
                               ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.only(right: 40),
-                              child: Image.asset(
-                                images[index],
-                                height: 70,
-                                color: Colors.grey.shade300,
+                              Container(
+                                margin: EdgeInsets.only(right: 40),
+                                child: Image.asset(
+                                  images[index],
+                                  height: 70,
+                                  color: Colors.grey.shade300,
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
-                        Container(
-                          child: Text("More info"),
-                        )
-                      ],
+                            ],
+                          ),
+                          Divider(),
+                          SizedBox(height: 10,),
+                          Container(
+                            margin: EdgeInsets.fromLTRB(10,5,10,20),
+                            child: Text("More info  >>", style: TextStyle(fontSize: 16),),
+                          )
+                        ],
+                      ),
                     ),
                   );
                 }),

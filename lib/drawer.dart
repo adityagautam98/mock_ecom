@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:mockecom/Orders.dart';
 import 'package:mockecom/Payment.dart';
 import 'package:mockecom/UI.dart';
+import 'package:mockecom/attributes.dart';
+import 'package:mockecom/categories.dart';
+import 'package:mockecom/dashboard.dart';
 
 import 'RegisteredUser.dart';
 
@@ -42,36 +45,54 @@ class _MyDrawerState extends State<MyDrawer> {
         child: SafeArea(
           child: ListView(
             children: <Widget>[
-
+              DrawerHeader(
+                  decoration: BoxDecoration(color: Colors.grey.shade200),
+                  child: Padding(
+                    padding: const EdgeInsets.all(0),
+                    child: Container(
+                      alignment: Alignment.bottomLeft,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          CircleAvatar(
+                            radius: 45,
+                            child: Icon(
+                              Icons.people,
+                              size: 40,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            child: Text(
+                              "Company/Seller Name",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.w300),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          )
+                        ],
+                      ),
+                    ),
+                  )),
               Container(
-
                 child: Column(
                   children: <Widget>[
-                    ListTile(
-                      title: Text(
-                        "Home",
-                        style: TextStyle(
-                            fontSize: 17 / queryData.textScaleFactor),
-                      ),
-                      trailing: Icon(Icons.home, color: Colors.black87,),
-                      onTap: () {
-                        Navigator.of(context).pop();
-                      },
-                    ),
                     ListTile(
                         title: Text(
                           "Dashboard",
                           style: TextStyle(
                               fontSize: 17 / queryData.textScaleFactor),
                         ),
-                        trailing: Icon(Icons.dashboard, color: Colors.black87,),
+                        trailing: Icon(
+                          Icons.dashboard,
+                          color: Colors.black87,
+                        ),
                         onTap: () {
                           Navigator.pop(context);
-                          var router = new MaterialPageRoute(
-                              builder: (BuildContext context) {
-                                return Ui();
-                              });
-                          Navigator.of(context).push(router);
                         }),
                     ListTile(
                         title: Text(
@@ -79,13 +100,16 @@ class _MyDrawerState extends State<MyDrawer> {
                           style: TextStyle(
                               fontSize: 17 / queryData.textScaleFactor),
                         ),
-                        trailing: Icon(Icons.category, color: Colors.black87,),
+                        trailing: Icon(
+                          Icons.category,
+                          color: Colors.black87,
+                        ),
                         onTap: () {
                           Navigator.pop(context);
                           var router = new MaterialPageRoute(
                               builder: (BuildContext context) {
-                                return Ui();
-                              });
+                            return Categories();
+                          });
                           Navigator.of(context).push(router);
                         }),
                     ListTile(
@@ -94,13 +118,14 @@ class _MyDrawerState extends State<MyDrawer> {
                           style: TextStyle(
                               fontSize: 17 / queryData.textScaleFactor),
                         ),
-                        trailing: Icon(Icons.edit_attributes,color: Colors.black87),
+                        trailing:
+                            Icon(Icons.edit_attributes, color: Colors.black87),
                         onTap: () {
                           Navigator.pop(context);
                           var router = new MaterialPageRoute(
                               builder: (BuildContext context) {
-                                return Ui();
-                              });
+                            return Attributes();
+                          });
                           Navigator.of(context).push(router);
                         }),
                     ListTile(
@@ -109,13 +134,13 @@ class _MyDrawerState extends State<MyDrawer> {
                           style: TextStyle(
                               fontSize: 17 / queryData.textScaleFactor),
                         ),
-                        trailing: Icon(Icons.receipt,color: Colors.black87),
+                        trailing: Icon(Icons.receipt, color: Colors.black87),
                         onTap: () {
                           Navigator.pop(context);
                           var router = new MaterialPageRoute(
                               builder: (BuildContext context) {
-                                return Ui();
-                              });
+                            return UI();
+                          });
                           Navigator.of(context).push(router);
                         }),
                     ListTile(
@@ -124,29 +149,30 @@ class _MyDrawerState extends State<MyDrawer> {
                           style: TextStyle(
                               fontSize: 17 / queryData.textScaleFactor),
                         ),
-                        trailing: Icon(Icons.shopping_cart,color: Colors.black87),
+                        trailing:
+                            Icon(Icons.shopping_cart, color: Colors.black87),
                         onTap: () {
                           Navigator.pop(context);
                           var router = new MaterialPageRoute(
                               builder: (BuildContext context) {
-                                return Orders();
-                              });
+                            return Orders();
+                          });
                           Navigator.of(context).push(router);
                         }),
-
                     ListTile(
                         title: Text(
                           "Payment",
                           style: TextStyle(
                               fontSize: 17 / queryData.textScaleFactor),
                         ),
-                        trailing: Icon(Icons.shopping_cart,color: Colors.black87),
+                        trailing:
+                            Icon(Icons.shopping_cart, color: Colors.black87),
                         onTap: () {
                           Navigator.pop(context);
                           var router = new MaterialPageRoute(
                               builder: (BuildContext context) {
-                                return Payment();
-                              });
+                            return Payment();
+                          });
                           Navigator.of(context).push(router);
                         }),
                     ListTile(
@@ -155,13 +181,14 @@ class _MyDrawerState extends State<MyDrawer> {
                           style: TextStyle(
                               fontSize: 17 / queryData.textScaleFactor),
                         ),
-                        trailing: Icon(Icons.phone_android,color: Colors.black87),
+                        trailing:
+                            Icon(Icons.phone_android, color: Colors.black87),
                         onTap: () {
                           Navigator.pop(context);
                           var router = new MaterialPageRoute(
                               builder: (BuildContext context) {
-                                return Ui();
-                              });
+                            return UI();
+                          });
                           Navigator.of(context).push(router);
                         }),
                     ListTile(
@@ -170,13 +197,13 @@ class _MyDrawerState extends State<MyDrawer> {
                           style: TextStyle(
                               fontSize: 17 / queryData.textScaleFactor),
                         ),
-                        trailing: Icon(Icons.person,color: Colors.black87),
+                        trailing: Icon(Icons.person, color: Colors.black87),
                         onTap: () {
                           Navigator.pop(context);
                           var router = new MaterialPageRoute(
                               builder: (BuildContext context) {
-                                return Users();
-                              });
+                            return Users();
+                          });
                           Navigator.of(context).push(router);
                         }),
                     ListTile(
@@ -185,13 +212,14 @@ class _MyDrawerState extends State<MyDrawer> {
                           style: TextStyle(
                               fontSize: 17 / queryData.textScaleFactor),
                         ),
-                        trailing: Icon(Icons.closed_caption,color: Colors.black87),
+                        trailing:
+                            Icon(Icons.closed_caption, color: Colors.black87),
                         onTap: () {
                           Navigator.pop(context);
                           var router = new MaterialPageRoute(
                               builder: (BuildContext context) {
-                                return Ui();
-                              });
+                            return UI();
+                          });
                           Navigator.of(context).push(router);
                         }),
                     ListTile(
@@ -200,13 +228,14 @@ class _MyDrawerState extends State<MyDrawer> {
                           style: TextStyle(
                               fontSize: 17 / queryData.textScaleFactor),
                         ),
-                        trailing: Icon(Icons.notifications,color: Colors.black87),
+                        trailing:
+                            Icon(Icons.notifications, color: Colors.black87),
                         onTap: () {
                           Navigator.pop(context);
                           var router = new MaterialPageRoute(
                               builder: (BuildContext context) {
-                                return Ui();
-                              });
+                            return UI();
+                          });
                           Navigator.of(context).push(router);
                         }),
                     ListTile(
@@ -215,16 +244,15 @@ class _MyDrawerState extends State<MyDrawer> {
                           style: TextStyle(
                               fontSize: 17 / queryData.textScaleFactor),
                         ),
-                        trailing: Icon(Icons.content_cut,color: Colors.black87),
+                        trailing: Icon(Icons.settings, color: Colors.black87),
                         onTap: () {
                           Navigator.pop(context);
                           var router = new MaterialPageRoute(
                               builder: (BuildContext context) {
-                                return Ui();
-                              });
+                            return UI();
+                          });
                           Navigator.of(context).push(router);
                         }),
-
                   ],
                 ),
               ),

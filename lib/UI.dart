@@ -2,17 +2,16 @@ import 'package:flutter/material.dart';
 
 import 'drawer.dart';
 
-class Ui extends StatefulWidget {
+class UI extends StatefulWidget {
   @override
-  _UiState createState() => _UiState();
+  _UIState createState() => _UIState();
 }
 
-class _UiState extends State<Ui> {
+class _UIState extends State<UI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        drawer: MyDrawer(),
-        appBar: AppBar(
+         appBar: AppBar(
           title: Text(
             "Ui"
           ),
