@@ -40,7 +40,7 @@ class _OrdersState extends State<Orders> {
                             DataRow(cells: [
                               DataCell(Text('0422020749')),
                               DataCell(Text('Cash On Delivery	')),
-                              DataCell(Text("390")),
+                              DataCell(Text("\$390")),
                             ]),
                             DataRow(cells: [
                               DataCell(Text('0422020748')),

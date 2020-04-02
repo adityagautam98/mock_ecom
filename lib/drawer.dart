@@ -44,13 +44,7 @@ class _MyDrawerState extends State<MyDrawer> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              Container(
-                  width: double.maxFinite,
-                  child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
 
-                      ])),
               Expanded(
                 child: Container(
 
@@ -88,7 +82,7 @@ class _MyDrawerState extends State<MyDrawer> {
                             style: TextStyle(
                                 fontSize: 17 / queryData.textScaleFactor),
                           ),
-                          trailing: Icon(Icons.category),
+                          trailing: Icon(Icons.category, color: Colors.black87,),
                           onTap: () {
                             Navigator.pop(context);
                             var router = new MaterialPageRoute(
@@ -103,7 +97,7 @@ class _MyDrawerState extends State<MyDrawer> {
                             style: TextStyle(
                                 fontSize: 17 / queryData.textScaleFactor),
                           ),
-                          trailing: Icon(Icons.edit_attributes),
+                          trailing: Icon(Icons.edit_attributes,color: Colors.black87),
                           onTap: () {
                             Navigator.pop(context);
                             var router = new MaterialPageRoute(
@@ -118,7 +112,7 @@ class _MyDrawerState extends State<MyDrawer> {
                             style: TextStyle(
                                 fontSize: 17 / queryData.textScaleFactor),
                           ),
-                          trailing: Icon(Icons.receipt),
+                          trailing: Icon(Icons.receipt,color: Colors.black87),
                           onTap: () {
                             Navigator.pop(context);
                             var router = new MaterialPageRoute(
@@ -133,7 +127,7 @@ class _MyDrawerState extends State<MyDrawer> {
                             style: TextStyle(
                                 fontSize: 17 / queryData.textScaleFactor),
                           ),
-                          trailing: Icon(Icons.shopping_cart),
+                          trailing: Icon(Icons.shopping_cart,color: Colors.black87),
                           onTap: () {
                             Navigator.pop(context);
                             var router = new MaterialPageRoute(
@@ -149,7 +143,7 @@ class _MyDrawerState extends State<MyDrawer> {
                             style: TextStyle(
                                 fontSize: 17 / queryData.textScaleFactor),
                           ),
-                          trailing: Icon(Icons.shopping_cart),
+                          trailing: Icon(Icons.shopping_cart,color: Colors.black87),
                           onTap: () {
                             Navigator.pop(context);
                             var router = new MaterialPageRoute(
@@ -164,7 +158,7 @@ class _MyDrawerState extends State<MyDrawer> {
                             style: TextStyle(
                                 fontSize: 17 / queryData.textScaleFactor),
                           ),
-                          trailing: Icon(Icons.phone_android),
+                          trailing: Icon(Icons.phone_android,color: Colors.black87),
                           onTap: () {
                             Navigator.pop(context);
                             var router = new MaterialPageRoute(
@@ -179,7 +173,7 @@ class _MyDrawerState extends State<MyDrawer> {
                             style: TextStyle(
                                 fontSize: 17 / queryData.textScaleFactor),
                           ),
-                          trailing: Icon(Icons.person),
+                          trailing: Icon(Icons.person,color: Colors.black87),
                           onTap: () {
                             Navigator.pop(context);
                             var router = new MaterialPageRoute(
@@ -194,7 +188,7 @@ class _MyDrawerState extends State<MyDrawer> {
                             style: TextStyle(
                                 fontSize: 17 / queryData.textScaleFactor),
                           ),
-                          trailing: Icon(Icons.closed_caption),
+                          trailing: Icon(Icons.closed_caption,color: Colors.black87),
                           onTap: () {
                             Navigator.pop(context);
                             var router = new MaterialPageRoute(
@@ -209,7 +203,7 @@ class _MyDrawerState extends State<MyDrawer> {
                             style: TextStyle(
                                 fontSize: 17 / queryData.textScaleFactor),
                           ),
-                          trailing: Icon(Icons.notifications),
+                          trailing: Icon(Icons.notifications,color: Colors.black87),
                           onTap: () {
                             Navigator.pop(context);
                             var router = new MaterialPageRoute(
@@ -224,7 +218,7 @@ class _MyDrawerState extends State<MyDrawer> {
                             style: TextStyle(
                                 fontSize: 17 / queryData.textScaleFactor),
                           ),
-                          trailing: Icon(Icons.content_cut),
+                          trailing: Icon(Icons.content_cut,color: Colors.black87),
                           onTap: () {
                             Navigator.pop(context);
                             var router = new MaterialPageRoute(
