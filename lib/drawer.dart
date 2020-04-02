@@ -11,7 +11,7 @@ class MyDrawer extends StatefulWidget {
 }
 
 class _MyDrawerState extends State<MyDrawer> {
-  AssetImage gif = AssetImage("images/header.gif");
+  AssetImage gif = AssetImage("images/shop.gif");
   MediaQueryData queryData;
   String img;
 
@@ -42,6 +42,30 @@ class _MyDrawerState extends State<MyDrawer> {
         child: SafeArea(
           child: ListView(
             children: <Widget>[
+              Container(
+                  width: double.maxFinite,
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Container(
+                          height: queryData.size.height * .23,
+                          decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.6),
+                                  blurRadius: 2.0,
+                                )
+                              ],
+                              color: Colors.white,
+                              // The border you want
+                              border: new Border.all(
+                                width: 3.0,
+
+                              ),
+                              image: DecorationImage(
+                                  image: gif, fit: BoxFit.fill)),
+                        )
+                      ])),
 
               Container(
 
