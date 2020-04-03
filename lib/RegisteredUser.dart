@@ -100,7 +100,7 @@ class _UsersState extends State<Users> {
                                     Container(
                                         width: double.infinity,
                                         child: Text(
-                                          "deep@gmail.com",
+                                          "inquiry@cwservices.com",
                                           style: TextStyle(
                                             fontFamily: "Playfair",
                                             color: Colors.black87,
@@ -204,7 +204,7 @@ class _UsersState extends State<Users> {
                                     Container(
                                         width: double.infinity,
                                         child: Text(
-                                          "hh",
+                                          "Sample User",
                                           style: TextStyle(
                                             fontFamily: "Playfair",
                                             color: Colors.black87,
@@ -229,7 +229,7 @@ class _UsersState extends State<Users> {
                                     Container(
                                         width: double.infinity,
                                         child: Text(
-                                          "hjg@fg.nj",
+                                          "inquiry@cwservices.com",
                                           style: TextStyle(
                                             fontFamily: "Playfair",
                                             color: Colors.black87,
@@ -358,7 +358,7 @@ class _UsersState extends State<Users> {
                                     Container(
                                         width: double.infinity,
                                         child: Text(
-                                          "ranad964@gmail.com",
+                                          "inquiry@cwservices.com",
                                           style: TextStyle(
                                             fontFamily: "Playfair",
                                             color: Colors.black87,
@@ -462,7 +462,7 @@ class _UsersState extends State<Users> {
                                     Container(
                                         width: double.infinity,
                                         child: Text(
-                                          "pavan sms123",
+                                          "Sample User 3",
                                           style: TextStyle(
                                             fontFamily: "Playfair",
                                             color: Colors.black87,
@@ -487,7 +487,7 @@ class _UsersState extends State<Users> {
                                     Container(
                                         width: double.infinity,
                                         child: Text(
-                                          "pavansms750@gmail.com",
+                                          "inquiry@cwservices.com",
                                           style: TextStyle(
                                             fontFamily: "Playfair",
                                             color: Colors.black87,

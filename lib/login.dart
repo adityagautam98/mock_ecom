@@ -84,7 +84,7 @@ class _LoginPageState extends State<LoginPage> {
                   splashColor: Colors.grey.shade200.withOpacity(.5),
                   color: Colors.blueGrey.shade900,
                   onPressed: () {
-                    if (true|| password.text.toLowerCase() == "admin" &&
+                    if (username.text.toLowerCase() == "admin" &&
                         password.text == "123456") {
                       final snackBar =
                           SnackBar(content: Text("Login successful"));
@@ -94,6 +94,8 @@ class _LoginPageState extends State<LoginPage> {
                       Navigator.pushReplacement(context,
                           MaterialPageRoute(builder: (context) => DashBoard()));
                     } else {
+                      print(username.text);
+                      print(password.text);
                       final snackBar =
                           SnackBar(content: Text("Please enter valid username and password"));
                       key.currentState.showSnackBar(snackBar);
