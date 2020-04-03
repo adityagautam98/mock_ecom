@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:mockecom/Orders.dart';
 import 'package:mockecom/RegisteredUser.dart';
 import 'package:mockecom/login.dart';
+import 'package:mockecom/product.dart';
 
 import 'Payment.dart';
 import 'UI.dart';
@@ -22,7 +23,7 @@ void main() {
               color: Colors.blueGrey.shade900
             )),
             debugShowCheckedModeBanner: false,
-            home: LoginPage())
+            home: Product())
 
     );
   });}

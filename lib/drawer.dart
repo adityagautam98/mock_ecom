@@ -8,6 +8,7 @@ import 'package:mockecom/categories.dart';
 import 'package:mockecom/config.dart';
 import 'package:mockecom/dashboard.dart';
 import 'package:mockecom/notification.dart';
+import 'package:mockecom/product.dart';
 import 'package:mockecom/settings.dart';
 
 import 'RegisteredUser.dart';
@@ -147,7 +148,7 @@ class _MyDrawerState extends State<MyDrawer> {
                           Navigator.pop(context);
                           var router = new MaterialPageRoute(
                               builder: (BuildContext context) {
-                            return UI();
+                            return Product();
                           });
                           Navigator.of(context).push(router);
                         }),
