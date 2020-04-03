@@ -70,7 +70,6 @@ class _ProductState extends State<Product> {
       appBar: AppBar(
         title: Text("Products"),
       ),
-      drawer: MyDrawer(),
       floatingActionButton: Container(
         child: RaisedButton(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),

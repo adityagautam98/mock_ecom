@@ -23,7 +23,7 @@ void main() {
               color: Colors.blueGrey.shade900
             )),
             debugShowCheckedModeBanner: false,
-            home: Product())
+            home: LoginPage())
 
     );
   });}
