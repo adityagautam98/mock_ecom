@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:mockecom/Orders.dart';
 import 'package:mockecom/Payment.dart';
 import 'package:mockecom/UI.dart';
+import 'package:mockecom/admob.dart';
 import 'package:mockecom/attributes.dart';
 import 'package:mockecom/categories.dart';
+import 'package:mockecom/config.dart';
 import 'package:mockecom/dashboard.dart';
+import 'package:mockecom/notification.dart';
+import 'package:mockecom/settings.dart';
 
 import 'RegisteredUser.dart';
 
@@ -54,11 +58,15 @@ class _MyDrawerState extends State<MyDrawer> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
-                          CircleAvatar(
-                            radius: 45,
-                            child: Icon(
-                              Icons.people,
-                              size: 40,
+                          Center(
+                            child: CircleAvatar(
+                              backgroundColor: Colors.blueGrey.shade900,
+                              radius: 45,
+                              child: Icon(
+                                Icons.people,
+                                size: 40,
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                           SizedBox(
@@ -207,40 +215,55 @@ class _MyDrawerState extends State<MyDrawer> {
                           Navigator.of(context).push(router);
                         }),
                     ListTile(
-                        title: Text(
-                          "Admob",
-                          style: TextStyle(
-                              fontSize: 17 / queryData.textScaleFactor),
-                        ),
-                        trailing:
-                            Icon(Icons.closed_caption, color: Colors.black87),
-                        onTap: () {
-                          Navigator.pop(context);
-                          var router = new MaterialPageRoute(
-                              builder: (BuildContext context) {
-                            return UI();
-                          });
-                          Navigator.of(context).push(router);
-                        }),
+                      title: Text(
+                        "Admob",
+                        style: TextStyle(
+                            fontSize: 17 / queryData.textScaleFactor),
+                      ),
+                      trailing: Icon(Icons.closed_caption,color: Colors.black,),
+                      onTap: () {
+                        Navigator.pop(context);
+                        var router = new MaterialPageRoute(
+                            builder: (BuildContext context) {
+                              return Admob();
+                            });
+                        Navigator.of(context).push(router);
+                      }
+                    ),
                     ListTile(
                         title: Text(
                           "Push Notification",
                           style: TextStyle(
                               fontSize: 17 / queryData.textScaleFactor),
                         ),
-                        trailing:
-                            Icon(Icons.notifications, color: Colors.black87),
+                        trailing: Icon(Icons.add_alert, color: Colors.black,),
                         onTap: () {
                           Navigator.pop(context);
                           var router = new MaterialPageRoute(
                               builder: (BuildContext context) {
-                            return UI();
-                          });
+                                return PushNotification();
+                              });
+                          Navigator.of(context).push(router);
+                        }
+                    ),
+                    ListTile(
+                        title: Text(
+                          "Configuration",
+                          style: TextStyle(
+                              fontSize: 17 / queryData.textScaleFactor),
+                        ),
+                        trailing: Icon(Icons.build, color: Colors.black87),
+                        onTap: () {
+                          Navigator.pop(context);
+                          var router = new MaterialPageRoute(
+                              builder: (BuildContext context) {
+                                return Configuration();
+                              });
                           Navigator.of(context).push(router);
                         }),
                     ListTile(
                         title: Text(
-                          "Configuration",
+                          "Settings",
                           style: TextStyle(
                               fontSize: 17 / queryData.textScaleFactor),
                         ),
@@ -249,8 +272,8 @@ class _MyDrawerState extends State<MyDrawer> {
                           Navigator.pop(context);
                           var router = new MaterialPageRoute(
                               builder: (BuildContext context) {
-                            return UI();
-                          });
+                                return Settings();
+                              });
                           Navigator.of(context).push(router);
                         }),
                   ],

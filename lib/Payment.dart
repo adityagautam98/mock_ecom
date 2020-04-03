@@ -10,7 +10,6 @@ class Payment extends StatefulWidget {
 
 class _PaymentState extends State<Payment> {
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
-  final GlobalKey<FormState> _formKey = new GlobalKey<FormState>();
   var counter = 0;
 
   @override
