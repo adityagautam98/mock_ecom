@@ -18,11 +18,11 @@ void main() {
     runApp(
         MaterialApp(
             theme: ThemeData(
-              // Define the default brightness and colors.
-              brightness: Brightness.light,),
+            appBarTheme: AppBarTheme(
+              color: Colors.blueGrey.shade900
+            )),
             debugShowCheckedModeBanner: false,
             home: LoginPage())
-
 
     );
   });}
